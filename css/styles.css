@@ -10,7 +10,7 @@
 
 body.pagina-principal {
     min-height: 100vh; /* Altura mínima de pantalla */
-    background-color: white; /* Color de fondo */
+    background-color: #ffffff; /* Color de fondo */
     color: #111; /* Color de texto */
     font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif; /* Tipografía */
     overflow-x: hidden; /* Evita scroll horizontal */
