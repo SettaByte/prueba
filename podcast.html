@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8"> <!-- El uteefe -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Coso para celulares -->
+    <title>Podcast</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="pagina-principal">
+    <!-- Fondo oscuro -->
+    <div class="fondo-oscuro" id="fondo-oscuro"></div>
+
+    <div class="container-fluid p-0">
+        <!-- Encabezado superior -->
+        <header class="barra-superior">
+            <div class="contenedor-superior container-fluid px-3 px-md-4">
+                
+                <!-- Botón para abrir menú -->
+                <button id="abrir-menu" class="boton-menu" type="button" aria-label="Abrir menú">
+                    Menú
+                </button>
+
+                <!-- Logo y título -->
+                <div class="marca-superior">
+                    <img class="imagen-marca" src="imagenes/logo_colegio_de_bachilleres.gif" alt="Logo">
+                    <span class="titulo-navbar">Podcast</span>
+                </div>
+
+                <!-- Navegación principal -->
+                <nav id="navegacion-principal" class="menu-principal" aria-label="Navegación principal">
+                    
+                    <!-- Botón para cerrar menú -->
+                    <button id="cerrar-menu" class="boton-cerrar" type="button" aria-label="Cerrar menú">
+                        Cerrar
+                    </button>
+
+                    <!-- Lista de enlaces -->
+                    <ul class="lista-enlaces">
+                        <li><a href="#">Inicio</a></li> <!-- talvez quita esto, si no es necesario, quitalo-->
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Capacitaciones</a></li>
+                        <li><a href="#">Métodos de evaluación</a></li>
+                        <li><a href="#">Materias sextos</a></li>
+                        <li><a href="#">Actividades comunitarias</a></li>
+                        <li><a href="#">Selectivos</a></li>
+                        <li><a href="#">Reseñas</a></li>
+                        <li><a href="#">Creadores</a></li>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="imagenes/pez.png">pez</a></li> <!-- esto quitalo tambien, era de broma, obvio-->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Contenido principal -->
+        <main class="seccion-principal container py-4 py-md-5">
+
+            <!-- Título de sección ELMEJORCONTENIDO.EXE-->
+            <section class="titulo-cine text-center mb-4 mb-md-5">
+                <div class="linea-decorativa linea-superior"></div> <!-- Línea decorativa -->
+                <h1 class="titulo-seccion">EL MEJOR CONTENIDO</h1>
+                <div class="linea-decorativa linea-inferior"></div> <!-- Línea decorativa -->
+            </section>
+
+            <!-- Tarjetas de contenido its cinema-->
+            <section class="row g-4 justify-content-center">
+                <article class="col-12 col-md-4">
+                    <div class="tarjeta-pelicula">
+                        <div class="area-contenido">
+                            <p>Texto 1</p> <!-- Contenido de tarjeta -->
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-12 col-md-4">
+                    <div class="tarjeta-pelicula">
+                        <div class="area-contenido">
+                            <p>Texto 2</p> <!-- Contenido de tarjeta -->
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-12 col-md-4">
+                    <div class="tarjeta-pelicula">
+                        <div class="area-contenido">
+                            <p>Texto 3</p> <!-- Contenido de tarjeta -->
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Sección de otros contenidos (de verdad son otros contenidos)-->
+            <section id="seccion-otros-contenidos" class="seccion-otros-contenidos container py-5">
+                <div class="contenedor-otros-contenidos">
+
+                    <!-- Panel lateral con opciones (el coso de las estrellas) -->
+                    <aside class="panel-lateral-detalles">
+                        <h2 class="titulo-otros-contenidos">OTROS CONTENIDOS</h2>
+
+                        <!-- Video -->
+                        <div class="item-estrella">
+                            <a href="#" class="enlace-estrella" data-media="video" aria-label="Mostrar video">
+                                
+                                <!-- objeto de estrella (lo del svg hace a la estrella) -->
+                                <svg viewBox="0 0 200 200" class="estrella-tema estrella-oscura" aria-hidden="true">
+                                    <polygon points="100,18 123,74 184,74 136,110 154,170 100,136 46,170 64,110 16,74 77,74"></polygon>
+                                    <text x="100" y="100" text-anchor="middle" dominant-baseline="middle" class="texto-estrella">Video</text>
+                                </svg>
+                            </a>
+                            <p class="texto-estrella-descripcion">Descripción del video o contenido aquí</p>
+                        </div>
+
+                        <!-- Audio 1 -->
+                        <div class="item-estrella">
+                            <a href="#" class="enlace-estrella" data-media="audio1" aria-label="Mostrar audio 1">
+                                <svg viewBox="0 0 200 200" class="estrella-tema estrella-clara" aria-hidden="true">
+                                    <polygon points="100,18 123,74 184,74 136,110 154,170 100,136 46,170 64,110 16,74 77,74"></polygon>
+                                    <text x="100" y="100" text-anchor="middle" dominant-baseline="middle" class="texto-estrella">Audio 1</text>
+                                </svg>
+                            </a>
+                            <p class="texto-estrella-descripcion">Descripción del audio 1 o contenido aquí</p>
+                        </div>
+
+                        <!-- Audio 2 -->
+                        <div class="item-estrella">
+                            <a href="#" class="enlace-estrella" data-media="audio2" aria-label="Mostrar audio 2">
+                                <svg viewBox="0 0 200 200" class="estrella-tema estrella-clara" aria-hidden="true">
+                                    <polygon points="100,18 123,74 184,74 136,110 154,170 100,136 46,170 64,110 16,74 77,74"></polygon>
+                                    <text x="100" y="100" text-anchor="middle" dominant-baseline="middle" class="texto-estrella">Audio 2</text>
+                                </svg>
+                            </a>
+                            <p class="texto-estrella-descripcion">Descripción del audio 2 o contenido aquí</p>
+                        </div>
+                    </aside>
+
+                    <!-- Panel para el vidio -->
+                    <section class="panel-reproductor">
+                        <div class="contenedor-video" id="contenedor-media">
+                            
+                            <!-- con esto puedes reproducirlo, daaah (eeeeel video) -->
+                            <video id="media-player" class="video-podcast" controls>
+                                <source src="videos/pez.mp4" type="video/mp4"> <!-- Fuente del video -->
+                            </video>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Mensaje del final -->
+                <div class="mensaje-creadores">
+                    <p>Mensaje de los creadores del podcast para el publico</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Script del yabaescript -->
+    <script src="js/Scripts.js"></script>
+</body>
+
+</html>
